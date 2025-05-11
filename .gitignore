@@ -1,0 +1,36 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+
+# Virtual environment
+venv/
+.env
+
+# Jupyter Notebook checkpoints & cache
+.ipynb_checkpoints/
+*.nbconvert.ipynb
+
+# Jupyter log and kernel files
+*.log
+*.sqlite
+*.nb-*
+
+# Spark output
+output/
+*.parquet
+*.crc
+
+# Docker
+hospital-etl/          # Named container volumes if you ever export
+
+# OS / Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+*.swp
+
+# Misc
+*.bak

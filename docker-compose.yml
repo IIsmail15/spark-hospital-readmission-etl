@@ -1,0 +1,13 @@
+services:
+  spark-etl:
+    build: .
+    container_name: hospital-etl
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./data:/home/jovyan/data
+      - ./output:/home/jovyan/output
+      - ./app:/home/jovyan/app
+      - ./output:/home/jovyan/app/output
+    environment:
+      - PYTHONUNBUFFERED=1
